@@ -5,19 +5,21 @@ export default function Resume() {
   return (
     <section id="resume" className="resume-section">
       <h2 className="resume-title">Md Zafiruddin Danish</h2>
+      
+      {/* Clickable Email Address */}
       <p className="resume-contact">
-        md.zafiruddin0086@gmail.com | Phone: 9763352486
+        <a href="mailto:md.zafiruddin0086@gmail.com">md.zafiruddin0086@gmail.com</a>
       </p>
 
-      {/* Career Objective */}
       <div className="resume-card">
+        {/* Career Objective */}
         <h3>Career Objective</h3>
-        <p>
-          Seeking position as a Full Stack Developer where I can utilize my
+        <p className="career">
+          Seeking a position as a Full Stack Developer where I can utilize my
           technical skills, passion for coding, and dedication to learning and
           growing in a dynamic environment. As a fresher, I aim to contribute
           my enthusiasm and adaptability to deliver innovative solutions while
-          enhancing my expertise in development and full stack technologies.
+          enhancing my expertise in development and full-stack technologies.
         </p>
 
         {/* Technical Skills */}
@@ -36,20 +38,16 @@ export default function Resume() {
         <h3>Education</h3>
         <ul>
           <li>
-            <strong>Master’s in Computer Application</strong>, MIT World Peace University, Pune (June 2025 – July 2025)  
-            <strong>CGPA:</strong> 6.82
+            <strong>Master’s in Computer Application</strong>, MIT World Peace University, Pune (June 2025 – July 2025) — <strong>CGPA:</strong> 6.82
           </li>
           <li>
-            <strong>Bachelor’s in Computer Application</strong>, Vishwakarma College, Pune (June 2020 – July 2023)  
-            <strong>CGPA:</strong> 8.25
+            <strong>Bachelor’s in Computer Application</strong>, Vishwakarma College, Pune (June 2020 – July 2023) — <strong>CGPA:</strong> 8.25
           </li>
           <li>
-            <strong>Higher Secondary Examination</strong>, Latur Divisional Board (June 2018 – July 2020)  
-            <strong>Percentage:</strong> 56.31%
+            <strong>Higher Secondary Examination</strong>, Latur Divisional Board (June 2018 – July 2020) — <strong>Percentage:</strong> 56.31%
           </li>
           <li>
-            <strong>Secondary School Examination</strong>, Latur Divisional Board (June 2018)  
-            <strong>Percentage:</strong> 79.60%
+            <strong>Secondary School Examination</strong>, Latur Divisional Board (June 2018) — <strong>Percentage:</strong> 79.60%
           </li>
         </ul>
 
@@ -88,7 +86,7 @@ export default function Resume() {
         </ul>
       </div>
 
-      {/* Download Button */}
+      {/* Resume Download Button */}
       <a
         href="/Md Zafiruddin Danish Resume.pdf"
         download="Md_Zafiruddin_Danish_Resume.pdf"

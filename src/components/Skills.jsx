@@ -34,7 +34,7 @@ export default function Skills() {
         {/* Tools */}
         <div className="skill-card">
           <h3>Tools</h3>
-          <p>VS Code, Browser DevTools</p>
+          <p>VS Code, Browser DevTools, Vercel</p>
         </div>
 
       </div>

@@ -70,3 +70,43 @@ button {
   font-size: 18px;
   color: #facc15;
 }
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(3, 80px);
+    gap: 8px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: repeat(3, 70px); /* ✅ 3 cards per row on mobile */
+    gap: 6px;
+  }
+
+  .card {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .scoreboard {
+    font-size: 16px;
+  }
+}
