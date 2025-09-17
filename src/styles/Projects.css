@@ -12,9 +12,9 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -29,7 +29,7 @@
 
 .project-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeInUp {
@@ -43,40 +43,17 @@
   }
 }
 
-.heading{
+.heading {
   color: black;
 }
 
-.p1{
+.p1 {
   color: black;
 }
 
-.description{
+.description {
   color: black;
 }
-
-
-
-/* responsive */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-@media (max-width: 992px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 
 .tech-stack {
   margin-top: 0.5rem;
@@ -92,4 +69,104 @@
   border-radius: 12px;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+/* ============================= */
+/* Image & Hover Button Styling */
+/* ============================= */
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dashboard-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.corner-btn {
+  position: absolute;
+  top: 12px;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.left-btn {
+  left: 12px;
+}
+
+.right-btn {
+  right: 12px;
+}
+
+.image-wrapper:hover .corner-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================= */
+/* Responsive Adjustments       */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-img {
+    height: 200px;
+  }
+
+  .corner-btn {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+}
+
+
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dashboard-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease; /* smooth zoom */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Hover effect — zoom image only */
+.image-wrapper:hover .dashboard-img {
+  transform: scale(1.05);
 }
