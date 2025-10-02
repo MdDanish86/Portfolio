@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Projects.css";
 import confluence from "../assets/images/confluence-dashboard.png"
 import Business from "../assets/images/business-dashboard.png"
+import Job from "../assets/images/Job-Portal-dashboard.png"
 
 export default function Projects() {
   return (
@@ -45,8 +46,14 @@ export default function Projects() {
 
         </div>
         <div className="project-card">
-          <h3 className="p1">Online Medical Shop</h3>
-          <p className="description">Developed an Online Medical Shop platform that enables users to browse and order medicines and healthcare products anytime, anywhere. Implemented a user-friendly interface with secure shopping cart functionality, responsive design, and smooth checkout process to enhance accessibility and convenience.</p>
+                  <div className="image-wrapper">
+          
+
+             <img src={Job} alt="Job Portal Dashboard" className="dashboard-img"/>
+          
+                 </div>
+          <h3 className="p1">Job Portal</h3>
+          <p className="description">Developed a Job Portal web application that allows users to search and apply for jobs, while enabling employers to post and manage job listings, built with a user-friendly interface and dynamic functionality.</p>
 
           <div className="tech-stack">
             <span>HTML</span>
