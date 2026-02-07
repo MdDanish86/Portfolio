@@ -3,6 +3,7 @@ import "../styles/Projects.css";
 import confluence from "../assets/images/confluence-dashboard.png"
 import Business from "../assets/images/business-dashboard.png"
 import Job from "../assets/images/Job-Portal-dashboard.png"
+import Chatbot from "../assets/images/chatbot-dashboard.png"
 
 export default function Projects() {
   return (
@@ -62,7 +63,46 @@ export default function Projects() {
             <span>Node js</span>
           </div>
         </div>
+
+
+        <div className="project-card">
+                  <div className="image-wrapper">
+          
+
+             <img src={Chatbot} alt="Chatbot AI" className="dashboard-img"/>
+          
+                 </div>
+          <h3 className="p1">AI Chatbot 🤖</h3>
+          <p className="description">An AI-porwered MERN stack chatbot with intelligent responses, live calculations and a fully responsive design, deployed online for real time interactions.</p>
+
+          <div className="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Node js</span>
+             <span>Groq AI/ LLM</span>
+
+            {/* live  */}
+            <a
+             href="https://chatbot-1ztk.vercel.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="live-link"
+             title="View Live Project"
+            >🚀 Live
+            </a>
+
+
+          </div>
+        </div>
+
+
+
+
       </div>
+
+      
+
     </section>
   );
 }
