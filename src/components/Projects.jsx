@@ -33,8 +33,8 @@ export default function Projects() {
 
           <img src={confluence} alt="Confluence Dashboard" className="dashboard-img"/>
           </div>
-          <h3 className="p1">Confluence</h3>
-          <p className="description">Confluence is a centralized platform where companies can manage and showcase all their projects in one place. I built intuitive dashboards, project listing features, and efficient navigation so that administrators can easily add, edit, and organize projects.</p>
+          <h3 className="p1">Project Hub</h3>
+          <p className="description">Project hub is a centralized platform where companies can manage and showcase all their projects in one place. I built intuitive dashboards, project listing features, and efficient navigation so that administrators can easily add, edit, and organize projects.</p>
 
           <div className="tech-stack">
             <span>React</span>
