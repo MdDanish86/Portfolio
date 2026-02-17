@@ -4,6 +4,7 @@ import confluence from "../assets/images/confluence-dashboard.png"
 import Business from "../assets/images/business-dashboard.png"
 import Job from "../assets/images/Job-Portal-dashboard.png"
 import Chatbot from "../assets/images/chatbot-dashboard.png"
+import Bank from "../assets/images/bank-statement-dashboard.png"
 
 export default function Projects() {
   return (
@@ -92,11 +93,39 @@ export default function Projects() {
             >🚀 Live
             </a>
 
-
           </div>
         </div>
 
+                <div className="project-card">
+                  <div className="image-wrapper">
+          
 
+             <img src={Bank} alt="AI Bank Statment Parser" className="dashboard-img"/>
+          
+                 </div>
+          <h3 className="p1">AI Bank Statement Parser</h3>
+          <p className="description">Built a full-stack AI application that processes bank statements, performs OCR + LLM-based data extraction, and generates categorized transaction insights with a live dashboard.</p>
+
+          <div className="tech-stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>Google Gemini API (LLM)</span>
+            <span>OCR Processing</span>
+            
+            {/* live  */}
+            <a
+             href="https://bank-statement-tan.vercel.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="live-link"
+             title="View Live Project"
+            >🚀 Live
+            </a>
+
+          </div>
+        </div>
 
 
       </div>
